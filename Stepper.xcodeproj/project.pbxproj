@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E267C022529110B003A9C34 /* StepperKitInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C012529110B003A9C34 /* StepperKitInheritance.swift */; };
+		4E267C06252917F6003A9C34 /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */; };
+		4E3FA27D252A57570015B33B /* StepperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA27C252A57570015B33B /* StepperCollectionViewCell.xib */; };
+		4E78EF072521AC1000663950 /* Stepper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E78EF052521AC1000663950 /* Stepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E78EF142521AD1800663950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78EF132521AD1800663950 /* AppDelegate.swift */; };
+		4E78EF162521AD1800663950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78EF152521AD1800663950 /* SceneDelegate.swift */; };
+		4E78EF182521AD1800663950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78EF172521AD1800663950 /* ViewController.swift */; };
+		4E78EF1B2521AD1800663950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF192521AD1800663950 /* Main.storyboard */; };
+		4E78EF1D2521AD1C00663950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF1C2521AD1C00663950 /* Assets.xcassets */; };
+		4E78EF202521AD1C00663950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */; };
+		4E9042802521DB4B00982CD9 /* StepperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */; };
+		4E9042822521DD6A00982CD9 /* StepperCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E267C012529110B003A9C34 /* StepperKitInheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperKitInheritance.swift; sourceTree = "<group>"; };
+		4E267C03252917F6003A9C34 /* StepperExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StepperExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTCenterFlowLayout.h; sourceTree = "<group>"; };
+		4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCenterFlowLayout.m; sourceTree = "<group>"; };
+		4E3FA27C252A57570015B33B /* StepperCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepperCollectionViewCell.xib; sourceTree = "<group>"; };
+		4E78EF022521AC1000663950 /* Stepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E78EF052521AC1000663950 /* Stepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stepper.h; sourceTree = "<group>"; };
+		4E78EF062521AC1000663950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E78EF112521AD1800663950 /* StepperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E78EF132521AD1800663950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E78EF152521AD1800663950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4E78EF172521AD1800663950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E78EF1A2521AD1800663950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E78EF1C2521AD1C00663950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E78EF1F2521AD1C00663950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E78EF212521AD1C00663950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E78EEFF2521AC1000663950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E78EF0E2521AD1800663950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E78EEF82521AC1000663950 = {
+			isa = PBXGroup;
+			children = (
+				4E78EF042521AC1000663950 /* Stepper */,
+				4E78EF122521AD1800663950 /* StepperExample */,
+				4E78EF032521AC1000663950 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E78EF032521AC1000663950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E78EF022521AC1000663950 /* Stepper.framework */,
+				4E78EF112521AD1800663950 /* StepperExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E78EF042521AC1000663950 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				4E78EF052521AC1000663950 /* Stepper.h */,
+				4E78EF062521AC1000663950 /* Info.plist */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		4E78EF122521AD1800663950 /* StepperExample */ = {
+			isa = PBXGroup;
+			children = (
+				4E78EF132521AD1800663950 /* AppDelegate.swift */,
+				4E78EF152521AD1800663950 /* SceneDelegate.swift */,
+				4E78EF172521AD1800663950 /* ViewController.swift */,
+				4E267C012529110B003A9C34 /* StepperKitInheritance.swift */,
+				4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */,
+				4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */,
+				4E3FA27C252A57570015B33B /* StepperCollectionViewCell.xib */,
+				4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */,
+				4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */,
+				4E78EF192521AD1800663950 /* Main.storyboard */,
+				4E78EF1C2521AD1C00663950 /* Assets.xcassets */,
+				4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */,
+				4E78EF212521AD1C00663950 /* Info.plist */,
+				4E267C03252917F6003A9C34 /* StepperExample-Bridging-Header.h */,
+			);
+			path = StepperExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4E78EEFD2521AC1000663950 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E78EF072521AC1000663950 /* Stepper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E78EF012521AC1000663950 /* Stepper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E78EF0A2521AC1000663950 /* Build configuration list for PBXNativeTarget "Stepper" */;
+			buildPhases = (
+				4E78EEFD2521AC1000663950 /* Headers */,
+				4E78EEFE2521AC1000663950 /* Sources */,
+				4E78EEFF2521AC1000663950 /* Frameworks */,
+				4E78EF002521AC1000663950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stepper;
+			productName = Stepper;
+			productReference = 4E78EF022521AC1000663950 /* Stepper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E78EF102521AD1800663950 /* StepperExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E78EF222521AD1C00663950 /* Build configuration list for PBXNativeTarget "StepperExample" */;
+			buildPhases = (
+				4E78EF0D2521AD1800663950 /* Sources */,
+				4E78EF0E2521AD1800663950 /* Frameworks */,
+				4E78EF0F2521AD1800663950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepperExample;
+			productName = StepperExample;
+			productReference = 4E78EF112521AD1800663950 /* StepperExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E78EEF92521AC1000663950 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Salah;
+				TargetAttributes = {
+					4E78EF012521AC1000663950 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					4E78EF102521AD1800663950 = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
+				};
+			};
+			buildConfigurationList = 4E78EEFC2521AC1000663950 /* Build configuration list for PBXProject "Stepper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E78EEF82521AC1000663950;
+			productRefGroup = 4E78EF032521AC1000663950 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E78EF012521AC1000663950 /* Stepper */,
+				4E78EF102521AD1800663950 /* StepperExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E78EF002521AC1000663950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E78EF0F2521AD1800663950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3FA27D252A57570015B33B /* StepperCollectionViewCell.xib in Resources */,
+				4E78EF202521AD1C00663950 /* LaunchScreen.storyboard in Resources */,
+				4E78EF1D2521AD1C00663950 /* Assets.xcassets in Resources */,
+				4E78EF1B2521AD1800663950 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E78EEFE2521AC1000663950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E78EF0D2521AD1800663950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9042802521DB4B00982CD9 /* StepperCollectionViewCell.swift in Sources */,
+				4E9042822521DD6A00982CD9 /* StepperCollectionView.swift in Sources */,
+				4E78EF182521AD1800663950 /* ViewController.swift in Sources */,
+				4E267C022529110B003A9C34 /* StepperKitInheritance.swift in Sources */,
+				4E78EF142521AD1800663950 /* AppDelegate.swift in Sources */,
+				4E78EF162521AD1800663950 /* SceneDelegate.swift in Sources */,
+				4E267C06252917F6003A9C34 /* KTCenterFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E78EF192521AD1800663950 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E78EF1A2521AD1800663950 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E78EF1F2521AD1C00663950 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E78EF082521AC1000663950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E78EF092521AC1000663950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E78EF0B2521AC1000663950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Stepper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salahmohamed.Stepper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E78EF0C2521AC1000663950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Stepper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salahmohamed.Stepper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E78EF232521AD1C00663950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
+				INFOPLIST_FILE = StepperExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salahmohamed.StepperExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StepperExample/StepperExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E78EF242521AD1C00663950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
+				INFOPLIST_FILE = StepperExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salahmohamed.StepperExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StepperExample/StepperExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E78EEFC2521AC1000663950 /* Build configuration list for PBXProject "Stepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E78EF082521AC1000663950 /* Debug */,
+				4E78EF092521AC1000663950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E78EF0A2521AC1000663950 /* Build configuration list for PBXNativeTarget "Stepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E78EF0B2521AC1000663950 /* Debug */,
+				4E78EF0C2521AC1000663950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E78EF222521AD1C00663950 /* Build configuration list for PBXNativeTarget "StepperExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E78EF232521AD1C00663950 /* Debug */,
+				4E78EF242521AD1C00663950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E78EEF92521AC1000663950 /* Project object */;
+}
