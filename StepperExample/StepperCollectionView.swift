@@ -9,6 +9,10 @@
 import UIKit
 
 open class StepperStyle{
+    var indicatorCornerRadius:CGFloat=2
+    var indicatorSpace:CGFloat=0
+    var indicatorHeight:CGFloat=2
+
     var spaceBetweenItems:CGFloat=UIScreen.main.bounds.width/5;
     var contentSize:CGFloat=50;
     var subtitleFont:UIFont?
@@ -23,6 +27,18 @@ open class StepperStyle{
     var selectedIndicatorColor:UIColor?
     var notSelectedIndicatorColor:UIColor?
     
+    func indicatorCornerRadius(_ indicatorCornerRadius:CGFloat)->Self{
+    self.indicatorCornerRadius=indicatorCornerRadius
+    return self;
+    }
+    func indicatorHeight(_ indicatorHeight:CGFloat)->Self{
+    self.indicatorHeight=indicatorHeight
+    return self;
+    }
+    func indicatorSpace(_ indicatorSpace:CGFloat)->Self{
+    self.indicatorSpace=indicatorSpace
+    return self;
+    }
     func contentSize(_ contentSize:CGFloat)->Self{
     self.contentSize=contentSize
     return self;
@@ -69,6 +85,7 @@ open class StepperStyle{
     }
 }
 enum Coentnt{
+  case imageWithTitle(selected:UIImage,notSelected:UIImage,title:String)
   case image(selected:UIImage,notSelected:UIImage)
   case circle
   case radiobutton

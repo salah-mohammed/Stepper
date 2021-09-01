@@ -8,6 +8,38 @@
 
 import UIKit
 
+extension UIView{
+    public func bs_roundCorners(_ corners: UIRectCorner,_ radius: CGFloat) {
+         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+         let mask = CAShapeLayer()
+         mask.path = path.cgPath
+         layer.mask = mask
+     }
+    public func bs_roundCornersRespectLanauge(_ corners: UIRectCorner,_ radius: CGFloat) {
+        var internalCorners=corners
+        if UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft {
+            if internalCorners.contains(.topRight){
+                internalCorners.remove(.topRight)
+                internalCorners.insert(.topLeft)
+            }
+            if internalCorners.contains(.topLeft){
+            internalCorners.remove(.topLeft)
+            internalCorners.insert(.topRight)
+            }
+            if  internalCorners.contains(.bottomRight){
+                internalCorners.remove(.bottomRight)
+                internalCorners.insert(.bottomLeft)
+            }
+            if  internalCorners.contains(.bottomLeft){
+                internalCorners.remove(.bottomLeft)
+                internalCorners.insert(.bottomRight)
+            }
+        }else{
+
+        }
+        self.bs_roundCorners(internalCorners, radius);
+     }
+}
 class StepperCollectionViewCell: UICollectionViewCell {
     var item:StepperITem?;
     var stepper:StepperCollectionView?
@@ -26,11 +58,23 @@ class StepperCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var viewBorderView: RoundedView!
     @IBOutlet weak var layoutConstraintWidthContent: NSLayoutConstraint!
     @IBOutlet weak var imgBorderImage: UIImageView!
+    @IBOutlet weak var stackViewIndicator: UIStackView!
+    @IBOutlet weak var layoutConstraintHeightOfIndicatorView: NSLayoutConstraint!
+
     @IBAction func btnAction(_ sender: Any) {
         if let item:StepperITem=item,let indexPath:IndexPath=indexPath{
             stepper?.actionHandler?(indexPath.row,item)
             self.stepper?.selectedIndex=indexPath.row;
             stepper?.reloadData();
+        }
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews();
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            self.viewLeadingIndicator.bs_roundCornersRespectLanauge([.topRight,.bottomRight], self.stepper?.style.indicatorCornerRadius ?? 0)
+            self.viewTrailingIndicator.bs_roundCornersRespectLanauge([.topLeft,.bottomLeft], self.stepper?.style.indicatorCornerRadius ?? 0)
+            self.viewLeadingIndicator.clipsToBounds=true
+            self.viewTrailingIndicator.clipsToBounds=true
         }
     }
     open func config(_ indexPath:IndexPath,_ item:StepperITem,_ stepper:StepperCollectionView){
@@ -40,10 +84,29 @@ class StepperCollectionViewCell: UICollectionViewCell {
         self.lblSubTitle.text=item.subtitle ?? "";
         self.lblSubTitle.font=stepper.style.subtitleFont;
         self.lblSubTitle.textColor=stepper.style.subtitleColor
-
+        self.stackViewIndicator.spacing = stepper.style.indicatorSpace;
         self.viewContent.layer.borderWidth=0
+        self.layoutConstraintHeightOfIndicatorView.constant = stepper.style.indicatorHeight;
+
         switch item.content!{
   
+        case .imageWithTitle(selected: let selected, notSelected: let notSelected, title: let title):
+            self.style(selectedHanadler: {
+                self.img.image=selected
+                self.viewContent.backgroundColor=stepper.style.selectedColor;
+                self.lblTitle.text=title;
+
+            }) {
+                self.img.image=notSelected
+                self.viewContent.backgroundColor=stepper.style.defaultColor;
+                self.lblTitle.text=title;
+
+            }
+            self.lblTitle.isHidden=false;
+            self.img.isHidden=false;
+            self.viewBorderView.isHidden=true;
+            self.viewRadioButton.isHidden=true;
+            break;
         case .image(selected: let selected, notSelected: let notSelected):
             self.style(selectedHanadler: {
                 self.img.image=selected

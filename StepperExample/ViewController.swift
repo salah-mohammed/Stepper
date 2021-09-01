@@ -16,13 +16,16 @@ class ViewController: UIViewController {
     @IBOutlet var forthStepperCollectionView:StepperCollectionView!
 
     @IBOutlet weak var fifthStepperCollectionView: StepperCollectionView!
+    @IBOutlet weak var sixthStepperCollectionView: StepperCollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupFirst();
         setupSecond();
-//        setupThired();
+        setupThired();
         setupForth();
         setupFifth();
+        setupSixth();
         // Do any additional setup after loading the view.
     }
     func setupFirst(){
@@ -42,19 +45,19 @@ class ViewController: UIViewController {
             
         }
     }
-//    func setupThired(){
-//        thiredStepperCollectionView.objects=[
-//            StepperITem("First",.image(selected:UIImage.init(named:"")!, notSelected: UIImage.init(named:"")!)),
-//            StepperITem("Second",.image(selected:UIImage.init(named:"")!, notSelected: UIImage.init(named:"")!)),
-//            StepperITem("Thired",.image(selected:UIImage.init(named:"")!, notSelected: UIImage.init(named:"")!)),
-//            StepperITem("Forth",.image(selected:UIImage.init(named:"")!, notSelected: UIImage.init(named:"")!)),
-//            StepperITem("Fifth",.image(selected:UIImage.init(named:"")!, notSelected: UIImage.init(named:"")!))]
-//        thiredStepperCollectionView.style=StepperStyle().defaultColor(UIColor.black).selectedColor(UIColor.red).notSelectedIndicatorColor(UIColor.black).selectedIndicatorColor(UIColor.red).notSelectedIndicatorColor(UIColor.black).contentSize(30);
-//        thiredStepperCollectionView.reloadData();
-//        thiredStepperCollectionView.actionHandler = { (item1,item2) in
-//    
-//        }
-//    }
+    func setupThired(){
+        thiredStepperCollectionView.objects=[
+            StepperITem("First",.image(selected:UIImage.init(named:"ic_checked")!, notSelected: UIImage.init(named:"ic_notChecked")!)),
+            StepperITem("Second",.image(selected:UIImage.init(named:"ic_checked")!, notSelected: UIImage.init(named:"ic_notChecked")!)),
+            StepperITem("Thired",.image(selected:UIImage.init(named:"ic_checked")!, notSelected: UIImage.init(named:"ic_notChecked")!)),
+            StepperITem("Forth",.image(selected:UIImage.init(named:"ic_checked")!, notSelected: UIImage.init(named:"ic_notChecked")!)),
+            StepperITem("Fifth",.image(selected:UIImage.init(named:"ic_checked")!, notSelected: UIImage.init(named:"ic_notChecked")!))]
+        thiredStepperCollectionView.style=StepperStyle().defaultColor(UIColor.clear).selectedColor(UIColor.clear).notSelectedIndicatorColor(UIColor.clear).selectedIndicatorColor(UIColor.clear).notSelectedIndicatorColor(UIColor.clear).contentSize(30);
+        thiredStepperCollectionView.reloadData();
+        thiredStepperCollectionView.actionHandler = { (item1,item2) in
+    
+        }
+    }
     func setupForth(){
         forthStepperCollectionView.objects=[StepperITem("First", .radiobutton),StepperITem("Second",.radiobutton),StepperITem("Thired",.radiobutton),StepperITem("Forth",.radiobutton),StepperITem("Fifth",.radiobutton)]
         forthStepperCollectionView.style=StepperStyle().defaultColor(UIColor.black).selectedColor(UIColor.red).notSelectedIndicatorColor(UIColor.black).selectedIndicatorColor(UIColor.red).notSelectedIndicatorColor(UIColor.black).contentSize(50);
@@ -68,6 +71,28 @@ class ViewController: UIViewController {
         fifthStepperCollectionView.style=StepperStyle().defaultColor(UIColor.black).selectedColor(UIColor.red).notSelectedIndicatorColor(UIColor.black).selectedIndicatorColor(UIColor.red).notSelectedIndicatorColor(UIColor.black).contentSize(50).borderTitleColor(.orange)
         fifthStepperCollectionView.reloadData();
         fifthStepperCollectionView.actionHandler = { (item1,item2) in
+    
+        }
+    }
+    func setupSixth(){
+        var selectedImage = UIImage.init(named:"ic_checked")!;
+        var notSelectedImage = UIImage.init(named:"ic_notChecked")!;
+       
+        var first = Coentnt.imageWithTitle(selected: selectedImage, notSelected: notSelectedImage, title:"1");
+        var second = Coentnt.imageWithTitle(selected: selectedImage, notSelected: notSelectedImage, title:"2");
+        var thired = Coentnt.imageWithTitle(selected: selectedImage, notSelected: notSelectedImage, title:"3");
+        var forth = Coentnt.imageWithTitle(selected: selectedImage, notSelected: notSelectedImage, title:"4");
+        var fifth = Coentnt.imageWithTitle(selected: selectedImage, notSelected: notSelectedImage, title:"5");
+
+        sixthStepperCollectionView.objects=[
+            StepperITem("First",first),
+            StepperITem("Second",second),
+            StepperITem("Thired",thired),
+            StepperITem("Forth",forth),
+            StepperITem("Fifth",fifth)]
+        sixthStepperCollectionView.style=StepperStyle().indicatorCornerRadius(5).indicatorHeight(6).indicatorSpace(5).defaultColor(UIColor.clear).selectedColor(UIColor.clear).notSelectedIndicatorColor(UIColor.init(named:"#B5D5ED")!).selectedIndicatorColor(UIColor.init(named:"#3AB000")!).contentSize(30);
+        sixthStepperCollectionView.reloadData();
+        sixthStepperCollectionView.actionHandler = { (item1,item2) in
     
         }
     }
