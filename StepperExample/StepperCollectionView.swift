@@ -16,14 +16,21 @@ open class StepperStyle{
     var spaceBetweenItems:CGFloat=UIScreen.main.bounds.width/5;
     var contentSize:CGFloat=50;
     var subtitleFont:UIFont?
-    var titleColor:UIColor?
-    var subtitleColor:UIColor?
-    var selectedColor:UIColor?
-    var defaultColor:UIColor?
+    // titleColor
+    var defaultTitleColor:UIColor?
+    var selectedTitleColor:UIColor?
+    var currentTitleColor:UIColor?
+    // subtitleColor
+    var defaultSubtitleColor:UIColor?
+    var selectedSubtitleColor:UIColor?
+    var currentSubtitleColor:UIColor?
 
+    //background of element
+    var selectedColor:UIColor?
+    var currentColor:UIColor?
+    var defaultColor:UIColor?
     var borderTitleColor:UIColor?
     var borderTitleFont:UIFont?
-
     var selectedIndicatorColor:UIColor?
     var notSelectedIndicatorColor:UIColor?
     
@@ -51,16 +58,36 @@ open class StepperStyle{
     self.subtitleFont=subtitleFont
     return self;
     }
-    func titleColor(_ titleColor:UIColor)->Self{
-    self.titleColor=titleColor
+    func defaultTitleColor(_ defaultTitleColor:UIColor)->Self{
+    self.defaultTitleColor=defaultTitleColor
     return self;
     }
-    func subtitleColor(_ subtitleColor:UIColor)->Self{
-    self.subtitleColor=subtitleColor
+    func selectedSubtitleColor(_ selectedSubtitleColor:UIColor)->Self{
+    self.selectedSubtitleColor=selectedSubtitleColor
+    return self;
+    }
+    func currentSubtitleColor(_ currentSubtitleColor:UIColor)->Self{
+    self.currentSubtitleColor=currentSubtitleColor
+    return self;
+    }
+    func selectedTitleColor(_ selectedTitleColor:UIColor)->Self{
+    self.selectedTitleColor=selectedTitleColor
+    return self;
+    }
+    func currentTitleColor(_ currentTitleColor:UIColor)->Self{
+    self.currentTitleColor=currentTitleColor
+    return self;
+    }
+    func defaultSubtitleColor(_ defaultSubtitleColor:UIColor?)->Self{
+    self.defaultSubtitleColor=defaultSubtitleColor
     return self;
     }
     func selectedColor(_ selectedColor:UIColor)->Self{
     self.selectedColor=selectedColor
+    return self;
+    }
+    func currentColor(_ currentColor:UIColor)->Self{
+    self.currentColor=currentColor
     return self;
     }
     func defaultColor(_ defaultColor:UIColor)->Self{
@@ -85,7 +112,7 @@ open class StepperStyle{
     }
 }
 enum Coentnt{
-  case imageWithTitle(selected:UIImage,notSelected:UIImage,title:String)
+    case imageWithTitle(selected:UIImage,notSelected:UIImage,current:UIImage?,title:String)
   case image(selected:UIImage,notSelected:UIImage)
   case circle
   case radiobutton

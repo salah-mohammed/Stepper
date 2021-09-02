@@ -83,25 +83,37 @@ class StepperCollectionViewCell: UICollectionViewCell {
         self.stepper=stepper;
         self.lblSubTitle.text=item.subtitle ?? "";
         self.lblSubTitle.font=stepper.style.subtitleFont;
-        self.lblSubTitle.textColor=stepper.style.subtitleColor
+        self.lblSubTitle.textColor=stepper.style.defaultSubtitleColor
         self.stackViewIndicator.spacing = stepper.style.indicatorSpace;
         self.viewContent.layer.borderWidth=0
         self.layoutConstraintHeightOfIndicatorView.constant = stepper.style.indicatorHeight;
 
         switch item.content!{
   
-        case .imageWithTitle(selected: let selected, notSelected: let notSelected, title: let title):
+        case .imageWithTitle(selected: let selected, notSelected: let notSelected,let current, title: let title):
             self.style(selectedHanadler: {
                 self.img.image=selected
                 self.viewContent.backgroundColor=stepper.style.selectedColor;
                 self.lblTitle.text=title;
+                self.lblSubTitle.textColor=stepper.style.selectedSubtitleColor
 
-            }) {
+            }, unselectedHanadler: {
                 self.img.image=notSelected
                 self.viewContent.backgroundColor=stepper.style.defaultColor;
                 self.lblTitle.text=title;
+                self.lblTitle.textColor=stepper.style.selectedTitleColor;
+                self.lblSubTitle.textColor=stepper.style.defaultSubtitleColor
 
-            }
+            }, {
+                self.img.image=current
+                self.viewContent.backgroundColor=stepper.style.currentColor;
+                self.lblTitle.text=title;
+                self.lblTitle.textColor=stepper.style.currentTitleColor;
+                self.lblSubTitle.textColor=stepper.style.currentSubtitleColor
+
+            })
+            
+
             self.lblTitle.isHidden=false;
             self.img.isHidden=false;
             self.viewBorderView.isHidden=true;
@@ -136,7 +148,7 @@ class StepperCollectionViewCell: UICollectionViewCell {
             break;
         case .title(let title):
             self.lblTitle.text=title;
-            self.lblTitle.textColor=self.stepper?.style.titleColor
+            self.lblTitle.textColor=self.stepper?.style.defaultTitleColor
             self.lblTitle.isHidden=false;
             self.img.isHidden=true;
             self.viewBorderView.isHidden=true;
@@ -177,6 +189,7 @@ class StepperCollectionViewCell: UICollectionViewCell {
             }) {
                 self.viewContent.backgroundColor=stepper.style.defaultColor;
             }
+
             break;
         }
         
@@ -217,11 +230,14 @@ class StepperCollectionViewCell: UICollectionViewCell {
         }
         }
     }
-    func style(selectedHanadler:()->Void,unselectedHanadler:()->Void){
+    func style(selectedHanadler:()->Void,unselectedHanadler:()->Void,_ currentHanadler:(()->Void)?=nil){
         if self.stepper?.selectedIndex ?? 0 < self.indexPath?.row ?? 0 {
         unselectedHanadler();
+        }else
+        if self.stepper?.selectedIndex ==  self.indexPath?.row ?? 0 {
+        currentHanadler?() ?? selectedHanadler()
         }else{
-        selectedHanadler();
+        selectedHanadler()
         }
     }
 }
