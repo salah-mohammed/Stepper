@@ -9,44 +9,44 @@
 import UIKit
 
 open class StepperStyle{
-    var indicatorCornerRadius:CGFloat=2
-    var indicatorSpace:CGFloat=0
-    var indicatorHeight:CGFloat=2
+    open var indicatorCornerRadius:CGFloat=2
+    open var indicatorSpace:CGFloat=0
+    open var indicatorHeight:CGFloat=2
 
-    var spaceBetweenItems:CGFloat=UIScreen.main.bounds.width/5;
-    var contentSize:CGFloat=50;
-    var subtitleFont:UIFont?
+    open var spaceBetweenItems:CGFloat=UIScreen.main.bounds.width/5;
+    open var contentSize:CGFloat=50;
+    open var subtitleFont:UIFont?
     // titleColor
-    var defaultTitleColor:UIColor?
-    var selectedTitleColor:UIColor?
-    var currentTitleColor:UIColor?
+    open var defaultTitleColor:UIColor?
+    open var selectedTitleColor:UIColor?
+    open var currentTitleColor:UIColor?
     // subtitleColor
-    var defaultSubtitleColor:UIColor?
-    var selectedSubtitleColor:UIColor?
-    var currentSubtitleColor:UIColor?
+    open var defaultSubtitleColor:UIColor?
+    open var selectedSubtitleColor:UIColor?
+    open var currentSubtitleColor:UIColor?
 
     //background of element
-    var selectedColor:UIColor?
-    var currentColor:UIColor?
-    var defaultColor:UIColor?
-    var borderTitleColor:UIColor?
-    var borderTitleFont:UIFont?
-    var selectedIndicatorColor:UIColor?
-    var notSelectedIndicatorColor:UIColor?
+    open var selectedColor:UIColor?
+    open var currentColor:UIColor?
+    open var defaultColor:UIColor?
+    open var borderTitleColor:UIColor?
+    open var borderTitleFont:UIFont?
+    open var selectedIndicatorColor:UIColor?
+    open var notSelectedIndicatorColor:UIColor?
     
-    func indicatorCornerRadius(_ indicatorCornerRadius:CGFloat)->Self{
+    open func indicatorCornerRadius(_ indicatorCornerRadius:CGFloat)->Self{
     self.indicatorCornerRadius=indicatorCornerRadius
     return self;
     }
-    func indicatorHeight(_ indicatorHeight:CGFloat)->Self{
+    open func indicatorHeight(_ indicatorHeight:CGFloat)->Self{
     self.indicatorHeight=indicatorHeight
     return self;
     }
-    func indicatorSpace(_ indicatorSpace:CGFloat)->Self{
+    open func indicatorSpace(_ indicatorSpace:CGFloat)->Self{
     self.indicatorSpace=indicatorSpace
     return self;
     }
-    func contentSize(_ contentSize:CGFloat)->Self{
+    open func contentSize(_ contentSize:CGFloat)->Self{
     self.contentSize=contentSize
     return self;
     }
@@ -54,59 +54,59 @@ open class StepperStyle{
     self.spaceBetweenItems=spaceBetweenItems
     return self;
     }
-    func subtitleFont(_ subtitleFont:UIFont)->Self{
+    open func subtitleFont(_ subtitleFont:UIFont)->Self{
     self.subtitleFont=subtitleFont
     return self;
     }
-    func defaultTitleColor(_ defaultTitleColor:UIColor)->Self{
+    open func defaultTitleColor(_ defaultTitleColor:UIColor)->Self{
     self.defaultTitleColor=defaultTitleColor
     return self;
     }
-    func selectedSubtitleColor(_ selectedSubtitleColor:UIColor)->Self{
+    open func selectedSubtitleColor(_ selectedSubtitleColor:UIColor)->Self{
     self.selectedSubtitleColor=selectedSubtitleColor
     return self;
     }
-    func currentSubtitleColor(_ currentSubtitleColor:UIColor)->Self{
+    open func currentSubtitleColor(_ currentSubtitleColor:UIColor)->Self{
     self.currentSubtitleColor=currentSubtitleColor
     return self;
     }
-    func selectedTitleColor(_ selectedTitleColor:UIColor)->Self{
+    open func selectedTitleColor(_ selectedTitleColor:UIColor)->Self{
     self.selectedTitleColor=selectedTitleColor
     return self;
     }
-    func currentTitleColor(_ currentTitleColor:UIColor)->Self{
+    open func currentTitleColor(_ currentTitleColor:UIColor)->Self{
     self.currentTitleColor=currentTitleColor
     return self;
     }
-    func defaultSubtitleColor(_ defaultSubtitleColor:UIColor?)->Self{
+    open func defaultSubtitleColor(_ defaultSubtitleColor:UIColor?)->Self{
     self.defaultSubtitleColor=defaultSubtitleColor
     return self;
     }
-    func selectedColor(_ selectedColor:UIColor)->Self{
+    open func selectedColor(_ selectedColor:UIColor)->Self{
     self.selectedColor=selectedColor
     return self;
     }
-    func currentColor(_ currentColor:UIColor)->Self{
+    open func currentColor(_ currentColor:UIColor)->Self{
     self.currentColor=currentColor
     return self;
     }
-    func defaultColor(_ defaultColor:UIColor)->Self{
+    open func defaultColor(_ defaultColor:UIColor)->Self{
     self.defaultColor=defaultColor
     return self;
     }
-    func selectedIndicatorColor(_ selectedIndicatorColor:UIColor)->Self{
+    open func selectedIndicatorColor(_ selectedIndicatorColor:UIColor)->Self{
     self.selectedIndicatorColor=selectedIndicatorColor
     return self;
     }
-    func notSelectedIndicatorColor(_ notSelectedIndicatorColor:UIColor)->Self{
+    open func notSelectedIndicatorColor(_ notSelectedIndicatorColor:UIColor)->Self{
     self.notSelectedIndicatorColor=notSelectedIndicatorColor
     return self;
     }
-    func borderTitleColor(_ borderTitleColor:UIColor)->Self{
+    open func borderTitleColor(_ borderTitleColor:UIColor)->Self{
     self.borderTitleColor=borderTitleColor
     return self;
     }
-    func borderTitleFont(_ borderTitleFont:UIFont)->Self{
+    open func borderTitleFont(_ borderTitleFont:UIFont)->Self{
     self.borderTitleFont=borderTitleFont
     return self;
     }
