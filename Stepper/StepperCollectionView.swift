@@ -129,23 +129,23 @@ class StepperITem:NSObject{
     }
 }
 
-class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+open class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     var selectedIndex:Int=0;
     typealias ActionHandler = (Int,StepperITem)->Void
     var actionHandler:ActionHandler?
     var style:StepperStyle=StepperStyle();
     var objects:[StepperITem]=[StepperITem]();
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return objects.count;
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"StepperCollectionViewCell", for: indexPath);
         var stepperItem = self.objects[indexPath.row];
         (cell as? StepperCollectionViewCell)?.config( indexPath, stepperItem, self);
         return cell;
     }
-    override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib();
         self.delegate=self;
         self.dataSource=self;
@@ -157,10 +157,10 @@ class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICollect
 //        self.setCollectionViewLayout(layout, animated: false)
 //        UICollectionViewController(collectionViewLayout: layout)
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width:self.style.spaceBetweenItems, height:self.frame.size.height);
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
     /*
