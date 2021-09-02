@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Stepper
 
 class ViewController: UIViewController {
     @IBOutlet var firstStepperCollectionView:StepperCollectionView!

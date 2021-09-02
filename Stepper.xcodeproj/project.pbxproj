@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4E267C022529110B003A9C34 /* StepperKitInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C012529110B003A9C34 /* StepperKitInheritance.swift */; };
-		4E267C06252917F6003A9C34 /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */; };
-		4E3FA27D252A57570015B33B /* StepperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA27C252A57570015B33B /* StepperCollectionViewCell.xib */; };
 		4E78EF072521AC1000663950 /* Stepper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E78EF052521AC1000663950 /* Stepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E78EF142521AD1800663950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78EF132521AD1800663950 /* AppDelegate.swift */; };
 		4E78EF182521AD1800663950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78EF172521AD1800663950 /* ViewController.swift */; };
-		4E78EF1B2521AD1800663950 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF192521AD1800663950 /* MainStoryboard.storyboard */; };
 		4E78EF1D2521AD1C00663950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF1C2521AD1C00663950 /* Assets.xcassets */; };
 		4E78EF202521AD1C00663950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */; };
 		4E9042802521DB4B00982CD9 /* StepperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */; };
 		4E9042822521DD6A00982CD9 /* StepperCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */; };
+		4EB7A7A526E0FAAC00A3ED24 /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */; };
+		4EB7A7B126E0FBCD00A3ED24 /* StepperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */; };
+		4EB7A7B226E0FBCD00A3ED24 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7AE26E0FBCD00A3ED24 /* MainStoryboard.storyboard */; };
+		4EB7A7B326E0FBCD00A3ED24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7B026E0FBCD00A3ED24 /* Info.plist */; };
+		4EB7A7BA26E0FC2100A3ED24 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7B826E0FC2100A3ED24 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,19 +27,20 @@
 		4E267C03252917F6003A9C34 /* StepperExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StepperExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTCenterFlowLayout.h; sourceTree = "<group>"; };
 		4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCenterFlowLayout.m; sourceTree = "<group>"; };
-		4E3FA27C252A57570015B33B /* StepperCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepperCollectionViewCell.xib; sourceTree = "<group>"; };
 		4E78EF022521AC1000663950 /* Stepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E78EF052521AC1000663950 /* Stepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stepper.h; sourceTree = "<group>"; };
-		4E78EF062521AC1000663950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E78EF112521AD1800663950 /* StepperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E78EF132521AD1800663950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E78EF172521AD1800663950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4E78EF1A2521AD1800663950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4E78EF1C2521AD1C00663950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E78EF1F2521AD1C00663950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E78EF212521AD1C00663950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionView.swift; sourceTree = "<group>"; };
+		4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepperCollectionViewCell.xib; sourceTree = "<group>"; };
+		4EB7A7AF26E0FBCD00A3ED24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4EB7A7B026E0FBCD00A3ED24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB7A7B926E0FC2100A3ED24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				4E78EF052521AC1000663950 /* Stepper.h */,
-				4E78EF062521AC1000663950 /* Info.plist */,
+				4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */,
+				4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */,
+				4E267C012529110B003A9C34 /* StepperKitInheritance.swift */,
+				4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */,
+				4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */,
+				4EB7A7AC26E0FBCD00A3ED24 /* Resources */,
 			);
 			path = Stepper;
 			sourceTree = "<group>";
@@ -90,19 +98,23 @@
 			children = (
 				4E78EF132521AD1800663950 /* AppDelegate.swift */,
 				4E78EF172521AD1800663950 /* ViewController.swift */,
-				4E267C012529110B003A9C34 /* StepperKitInheritance.swift */,
-				4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */,
-				4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */,
-				4E3FA27C252A57570015B33B /* StepperCollectionViewCell.xib */,
-				4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */,
-				4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */,
-				4E78EF192521AD1800663950 /* MainStoryboard.storyboard */,
+				4EB7A7B826E0FC2100A3ED24 /* MainStoryboard.storyboard */,
 				4E78EF1C2521AD1C00663950 /* Assets.xcassets */,
 				4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */,
 				4E78EF212521AD1C00663950 /* Info.plist */,
 				4E267C03252917F6003A9C34 /* StepperExample-Bridging-Header.h */,
 			);
 			path = StepperExample;
+			sourceTree = "<group>";
+		};
+		4EB7A7AC26E0FBCD00A3ED24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */,
+				4EB7A7AE26E0FBCD00A3ED24 /* MainStoryboard.storyboard */,
+				4EB7A7B026E0FBCD00A3ED24 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB7A7B226E0FBCD00A3ED24 /* MainStoryboard.storyboard in Resources */,
+				4EB7A7B126E0FBCD00A3ED24 /* StepperCollectionViewCell.xib in Resources */,
+				4EB7A7B326E0FBCD00A3ED24 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,10 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3FA27D252A57570015B33B /* StepperCollectionViewCell.xib in Resources */,
+				4EB7A7BA26E0FC2100A3ED24 /* MainStoryboard.storyboard in Resources */,
 				4E78EF202521AD1C00663950 /* LaunchScreen.storyboard in Resources */,
 				4E78EF1D2521AD1C00663950 /* Assets.xcassets in Resources */,
-				4E78EF1B2521AD1800663950 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB7A7A526E0FAAC00A3ED24 /* KTCenterFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,27 +245,34 @@
 				4E78EF182521AD1800663950 /* ViewController.swift in Sources */,
 				4E267C022529110B003A9C34 /* StepperKitInheritance.swift in Sources */,
 				4E78EF142521AD1800663950 /* AppDelegate.swift in Sources */,
-				4E267C06252917F6003A9C34 /* KTCenterFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4E78EF192521AD1800663950 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E78EF1A2521AD1800663950 /* Base */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
 		4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4E78EF1F2521AD1C00663950 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4EB7A7AE26E0FBCD00A3ED24 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EB7A7AF26E0FBCD00A3ED24 /* Base */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		4EB7A7B826E0FC2100A3ED24 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EB7A7B926E0FC2100A3ED24 /* Base */,
+			);
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -381,6 +403,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -406,6 +429,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
