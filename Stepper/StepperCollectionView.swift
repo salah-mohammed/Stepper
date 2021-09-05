@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class StepperStyle{
+open class StepperStyle:NSObject{
     open var indicatorCornerRadius:CGFloat=2
     open var indicatorSpace:CGFloat=0
     open var indicatorHeight:CGFloat=2
@@ -34,6 +34,9 @@ open class StepperStyle{
     open var selectedIndicatorColor:UIColor?
     open var notSelectedIndicatorColor:UIColor?
     
+    public override init() {
+        super.init();
+    }
     open func indicatorCornerRadius(_ indicatorCornerRadius:CGFloat)->Self{
     self.indicatorCornerRadius=indicatorCornerRadius
     return self;
