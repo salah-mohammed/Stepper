@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
       s.resource_bundles = {
-    'Stepper' => ['TestAccountKit/Resources/**/*.{xib,xcassets,json,imageset,bundle,strings,storyboard}','TestAccountKit/View/*.{lproj,storybard}']
+    'Stepper' => ['Stepper/Resources/**/*.{xib,xcassets,json,imageset,bundle,strings,storyboard}','Stepper/View/*.{lproj,storybard}']
   }
   #
   #  A list of resources included with the Pod. These are copied into the
