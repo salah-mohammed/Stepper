@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E267C022529110B003A9C34 /* StepperKitInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C012529110B003A9C34 /* StepperKitInheritance.swift */; };
 		4E78EF072521AC1000663950 /* Stepper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E78EF052521AC1000663950 /* Stepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E78EF142521AD1800663950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78EF132521AD1800663950 /* AppDelegate.swift */; };
 		4E78EF182521AD1800663950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78EF172521AD1800663950 /* ViewController.swift */; };
 		4E78EF1D2521AD1C00663950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF1C2521AD1C00663950 /* Assets.xcassets */; };
 		4E78EF202521AD1C00663950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */; };
-		4E9042802521DB4B00982CD9 /* StepperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */; };
-		4E9042822521DD6A00982CD9 /* StepperCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */; };
 		4EB7A7A526E0FAAC00A3ED24 /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */; };
 		4EB7A7B126E0FBCD00A3ED24 /* StepperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */; };
-		4EB7A7B326E0FBCD00A3ED24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7B026E0FBCD00A3ED24 /* Info.plist */; };
 		4EB7A7BA26E0FC2100A3ED24 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7B826E0FC2100A3ED24 /* MainStoryboard.storyboard */; };
+		4EBE717D26E4DCF200399280 /* StepperEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE717C26E4DCF200399280 /* StepperEx.swift */; };
+		4EBE718426E4DF0700399280 /* StepperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */; };
+		4EBE718926E4DF0B00399280 /* StepperCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */; };
+		4EBE718E26E4DF0F00399280 /* StepperKitInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C012529110B003A9C34 /* StepperKitInheritance.swift */; };
+		4EBE719126E4DF1700399280 /* KTCenterFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,9 @@
 		4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionView.swift; sourceTree = "<group>"; };
 		4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepperCollectionViewCell.xib; sourceTree = "<group>"; };
-		4EB7A7B026E0FBCD00A3ED24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB7A7B926E0FC2100A3ED24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4EBE717C26E4DCF200399280 /* StepperEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperEx.swift; sourceTree = "<group>"; };
+		4EBE719426E4DF3800399280 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */,
 				4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */,
 				4EB7A7AC26E0FBCD00A3ED24 /* Resources */,
+				4EBE717C26E4DCF200399280 /* StepperEx.swift */,
 			);
 			path = Stepper;
 			sourceTree = "<group>";
@@ -109,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */,
-				4EB7A7B026E0FBCD00A3ED24 /* Info.plist */,
+				4EBE719426E4DF3800399280 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBE719126E4DF1700399280 /* KTCenterFlowLayout.h in Headers */,
 				4E78EF072521AC1000663950 /* Stepper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +179,7 @@
 				TargetAttributes = {
 					4E78EF012521AC1000663950 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1230;
 					};
 					4E78EF102521AD1800663950 = {
 						CreatedOnToolsVersion = 11.6;
@@ -207,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB7A7B126E0FBCD00A3ED24 /* StepperCollectionViewCell.xib in Resources */,
-				4EB7A7B326E0FBCD00A3ED24 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBE718926E4DF0B00399280 /* StepperCollectionView.swift in Sources */,
+				4EBE718E26E4DF0F00399280 /* StepperKitInheritance.swift in Sources */,
+				4EBE717D26E4DCF200399280 /* StepperEx.swift in Sources */,
+				4EBE718426E4DF0700399280 /* StepperCollectionViewCell.swift in Sources */,
 				4EB7A7A526E0FAAC00A3ED24 /* KTCenterFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,10 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9042802521DB4B00982CD9 /* StepperCollectionViewCell.swift in Sources */,
-				4E9042822521DD6A00982CD9 /* StepperCollectionView.swift in Sources */,
 				4E78EF182521AD1800663950 /* ViewController.swift in Sources */,
-				4E267C022529110B003A9C34 /* StepperKitInheritance.swift in Sources */,
 				4E78EF142521AD1800663950 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +394,7 @@
 		4E78EF0B2521AC1000663950 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -396,7 +402,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Stepper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Stepper/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,6 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.salahmohamed.Stepper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -415,6 +422,7 @@
 		4E78EF0C2521AC1000663950 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -422,7 +430,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Stepper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Stepper/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

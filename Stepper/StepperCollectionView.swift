@@ -152,7 +152,8 @@ open class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICo
         super.awakeFromNib();
         self.delegate=self;
         self.dataSource=self;
-        self.register(UINib.init(nibName:"StepperCollectionViewCell", bundle: nil), forCellWithReuseIdentifier:"StepperCollectionViewCell");
+        self.register(UINib.init(nibName:"StepperCollectionViewCell", bundle:Bundle.module), forCellWithReuseIdentifier:"StepperCollectionViewCell");
+
 //        let layout = KTCenterFlowLayout()
 //        layout.minimumInteritemSpacing = 0
 //        layout.minimumLineSpacing = 0
