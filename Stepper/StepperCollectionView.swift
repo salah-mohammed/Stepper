@@ -111,18 +111,18 @@ open class StepperStyle{
     return self;
     }
 }
-enum Coentnt{
-    case imageWithTitle(selected:UIImage,notSelected:UIImage,current:UIImage?,title:String)
+public enum Coentnt{
+  case imageWithTitle(selected:UIImage,notSelected:UIImage,current:UIImage?,title:String)
   case image(selected:UIImage,notSelected:UIImage)
   case circle
   case radiobutton
   case border(UIImage?=nil,String?=nil)
   case title(String)
 }
-class StepperITem:NSObject{
-    var subtitle:String?
-    var content:Coentnt?
-    init(_ subtitle:String,_ content:Coentnt?) {
+public class StepperITem:NSObject{
+    open  var subtitle:String?
+    open var content:Coentnt?
+    public init(_ subtitle:String,_ content:Coentnt?) {
         super.init();
         self.subtitle=subtitle;
         self.content=content;
@@ -131,10 +131,10 @@ class StepperITem:NSObject{
 
 open class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     var selectedIndex:Int=0;
-    typealias ActionHandler = (Int,StepperITem)->Void
-    var actionHandler:ActionHandler?
-    var style:StepperStyle=StepperStyle();
-    var objects:[StepperITem]=[StepperITem]();
+    public typealias ActionHandler = (Int,StepperITem)->Void
+    public var actionHandler:ActionHandler?
+    public var style:StepperStyle=StepperStyle();
+    public var objects:[StepperITem]=[StepperITem]();
     open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return objects.count;
     }
