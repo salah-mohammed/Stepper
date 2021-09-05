@@ -133,7 +133,7 @@ public class StepperITem:NSObject{
 }
 
 open class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    var selectedIndex:Int=0;
+    public var selectedIndex:Int=0;
     public typealias ActionHandler = (Int,StepperITem)->Void
     public var actionHandler:ActionHandler?
     public var style:StepperStyle=StepperStyle();
