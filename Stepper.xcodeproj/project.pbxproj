@@ -20,7 +20,33 @@
 		4EBE718926E4DF0B00399280 /* StepperCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */; };
 		4EBE718E26E4DF0F00399280 /* StepperKitInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C012529110B003A9C34 /* StepperKitInheritance.swift */; };
 		4EBE719126E4DF1700399280 /* KTCenterFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */; };
+		4EBE71AD26E4E10000399280 /* Stepper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E78EF022521AC1000663950 /* Stepper.framework */; };
+		4EBE71AE26E4E10000399280 /* Stepper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E78EF022521AC1000663950 /* Stepper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EBE71AF26E4E10000399280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E78EEF92521AC1000663950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E78EF012521AC1000663950;
+			remoteInfo = Stepper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EBE71B126E4E10000399280 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4EBE71AE26E4E10000399280 /* Stepper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4E267C012529110B003A9C34 /* StepperKitInheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperKitInheritance.swift; sourceTree = "<group>"; };
@@ -55,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBE71AD26E4E10000399280 /* Stepper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +94,7 @@
 				4E78EF042521AC1000663950 /* Stepper */,
 				4E78EF122521AD1800663950 /* StepperExample */,
 				4E78EF032521AC1000663950 /* Products */,
+				4EBE71AC26E4E10000399280 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +145,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4EBE71AC26E4E10000399280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -157,10 +192,12 @@
 				4E78EF0D2521AD1800663950 /* Sources */,
 				4E78EF0E2521AD1800663950 /* Frameworks */,
 				4E78EF0F2521AD1800663950 /* Resources */,
+				4EBE71B126E4E10000399280 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4EBE71B026E4E10000399280 /* PBXTargetDependency */,
 			);
 			name = StepperExample;
 			productName = StepperExample;
@@ -250,6 +287,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EBE71B026E4E10000399280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E78EF012521AC1000663950 /* Stepper */;
+			targetProxy = 4EBE71AF26E4E10000399280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */ = {
