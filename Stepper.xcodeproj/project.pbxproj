@@ -17,7 +17,6 @@
 		4E9042822521DD6A00982CD9 /* StepperCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */; };
 		4EB7A7A526E0FAAC00A3ED24 /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */; };
 		4EB7A7B126E0FBCD00A3ED24 /* StepperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */; };
-		4EB7A7B226E0FBCD00A3ED24 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7AE26E0FBCD00A3ED24 /* MainStoryboard.storyboard */; };
 		4EB7A7B326E0FBCD00A3ED24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7B026E0FBCD00A3ED24 /* Info.plist */; };
 		4EB7A7BA26E0FC2100A3ED24 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB7A7B826E0FC2100A3ED24 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		4E90427F2521DB4B00982CD9 /* StepperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E9042812521DD6A00982CD9 /* StepperCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCollectionView.swift; sourceTree = "<group>"; };
 		4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepperCollectionViewCell.xib; sourceTree = "<group>"; };
-		4EB7A7AF26E0FBCD00A3ED24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4EB7A7B026E0FBCD00A3ED24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB7A7B926E0FC2100A3ED24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				4EB7A7AD26E0FBCD00A3ED24 /* StepperCollectionViewCell.xib */,
-				4EB7A7AE26E0FBCD00A3ED24 /* MainStoryboard.storyboard */,
 				4EB7A7B026E0FBCD00A3ED24 /* Info.plist */,
 			);
 			path = Resources;
@@ -209,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB7A7B226E0FBCD00A3ED24 /* MainStoryboard.storyboard in Resources */,
 				4EB7A7B126E0FBCD00A3ED24 /* StepperCollectionViewCell.xib in Resources */,
 				4EB7A7B326E0FBCD00A3ED24 /* Info.plist in Resources */,
 			);
@@ -257,14 +253,6 @@
 				4E78EF1F2521AD1C00663950 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4EB7A7AE26E0FBCD00A3ED24 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EB7A7AF26E0FBCD00A3ED24 /* Base */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		4EB7A7B826E0FC2100A3ED24 /* MainStoryboard.storyboard */ = {
