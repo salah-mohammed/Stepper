@@ -13,7 +13,7 @@ open class StepperStyle:NSObject{
     open var indicatorSpace:CGFloat=0
     open var indicatorHeight:CGFloat=2
 
-    open var spaceBetweenItems:CGFloat=UIScreen.main.bounds.width/5;
+    open var spaceBetweenItems:CGFloat?;
     open var contentSize:CGFloat=50;
     open var subtitleFont:UIFont?
     // titleColor
@@ -53,7 +53,7 @@ open class StepperStyle:NSObject{
     self.contentSize=contentSize
     return self;
     }
-    func spaceBetweenItems(_ spaceBetweenItems:CGFloat)->Self{
+    open func spaceBetweenItems(_ spaceBetweenItems:CGFloat)->Self{
     self.spaceBetweenItems=spaceBetweenItems
     return self;
     }
@@ -153,6 +153,7 @@ open class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICo
         self.delegate=self;
         self.dataSource=self;
         self.register(UINib.init(nibName:"StepperCollectionViewCell", bundle:Bundle.module), forCellWithReuseIdentifier:"StepperCollectionViewCell");
+        (self.collectionViewLayout as? UICollectionViewFlowLayout)?.itemSize = UICollectionViewFlowLayout.automaticSize
 
 //        let layout = KTCenterFlowLayout()
 //        layout.minimumInteritemSpacing = 0
@@ -162,7 +163,7 @@ open class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICo
 //        UICollectionViewController(collectionViewLayout: layout)
     }
     open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width:self.style.spaceBetweenItems, height:self.frame.size.height);
+        return CGSize.init(width:self.style.spaceBetweenItems ?? (self.frame.width/CGFloat(self.objects.count)), height:self.frame.size.height);
     }
     open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -173,6 +174,9 @@ open class StepperCollectionView: UICollectionView,UICollectionViewDelegate,UICo
 
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat{
     return 0
+    }
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero;
     }
     /*
     // Only override draw() if you perform custom drawing.
