@@ -20,11 +20,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupFirst();
-        setupSecond();
-        setupThired();
-        setupForth();
-        setupFifth();
+//        setupFirst();
+//        setupSecond();
+//        setupThired();
+//        setupForth();
+//        setupFifth();
         setupSixth();
         // Do any additional setup after loading the view.
     }

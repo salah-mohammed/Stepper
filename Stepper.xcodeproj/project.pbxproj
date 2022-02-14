@@ -50,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		4E267C012529110B003A9C34 /* StepperKitInheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperKitInheritance.swift; sourceTree = "<group>"; };
-		4E267C03252917F6003A9C34 /* StepperExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StepperExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E267C04252917F6003A9C34 /* KTCenterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTCenterFlowLayout.h; sourceTree = "<group>"; };
 		4E267C05252917F6003A9C34 /* KTCenterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCenterFlowLayout.m; sourceTree = "<group>"; };
 		4E78EF022521AC1000663950 /* Stepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +130,6 @@
 				4E78EF1C2521AD1C00663950 /* Assets.xcassets */,
 				4E78EF1E2521AD1C00663950 /* LaunchScreen.storyboard */,
 				4E78EF212521AD1C00663950 /* Info.plist */,
-				4E267C03252917F6003A9C34 /* StepperExample-Bridging-Header.h */,
 			);
 			path = StepperExample;
 			sourceTree = "<group>";
@@ -506,7 +504,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.salahmohamed.StepperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "StepperExample/StepperExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,7 +525,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.salahmohamed.StepperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "StepperExample/StepperExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
